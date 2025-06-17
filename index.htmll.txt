@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo - Proyecto Grupal</title>
+    <style>
+        :root {
+            --color-primario: #6a0dad;
+            --color-secundario: #1e90ff;
+            --color-texto: #333;
+            --color-fondo: #f5f5f5;
+            --color-blanco: #ffffff;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+            color: var(--color-blanco);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: var(--color-primario);
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: var(--color-blanco);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--color-secundario);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background-color: var(--color-blanco);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: var(--color-primario);
+        }
+        
+        .integrante {
+            border-left: 4px solid var(--color-secundario);
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .integrante h3 {
+            color: var(--color-secundario);
+            margin-top: 0;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .recursos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .recurso {
+            background-color: var(--color-fondo);
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1 1 200px;
+        }
+        
+        .upload-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border: 2px dashed var(--color-secundario);
+        }
+        
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .upload-form input[type="file"] {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .upload-form button {
+            background-color: var(--color-primario);
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .upload-form button:hover {
+            background-color: var(--color-secundario);
+        }
+        
+        .file-type-selector {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .file-type-selector label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestro Equipo</h1>
+        <p>Conoce más sobre nosotros y nuestros proyectos</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#ana">Ana Méndez</a></li>
+            <li><a href="#axel">Axel Edgardo</a></li>
+            <li><a href="#leonardo">Leonardo Luna</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#subir-archivos">Subir Archivos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Secciones de Ana Méndez -->
+        <section id="ana">
+            <h2>Ana Belén Méndez Juárez</h2>
+            
+            <div class="integrante">
+                <h3>1. Mi historia</h3>
+                <p>Ana Belén Méndez Juárez, estudio en la preparatoria CBTIS 118, estoy en 2a de especialidad programación y quiero estudiar medicina y especializarme en cirugía general.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>2. Mis logros y retos</h3>
+                <p>Sé programar en lenguaje C, sé manejar marketing, sé hacer páginas web, tengo de promedio de secundaria 8.0.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>3. Proyectos realizados</h3>
+                <p>Realicé una caja registradora en la prepa en lenguaje C, hago anuncios publicitarios y manejo páginas de empresas.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>4. Metas y aspiraciones</h3>
+                <p>Deseo estudiar medicina y especializarme en cirugía general o cardiotorácica.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>5. Lecciones de vida</h3>
+                <p>Lo más importante es la atención y el empeño que le pones al estudio, no es tan difícil como lo piensan, solo es cuestión de que te guste.</p>
+            </div>
+        </section>
+        
+        <!-- Secciones de Axel Edgardo -->
+        <section id="axel">
+            <h2>Axel Edgardo</h2>
+            
+            <div class="integrante">
+                <h3>1. Mi historia</h3>
+                <p>Nací rodeado de familiares, no solo en familia y durante mi niñez desde los 2 años hasta los 13 años me he lastimado mucho físicamente como golpes o cosas así nada grave. Durante toda mi trayectoria estudiantil siempre traté de mantenerme en los mejores calificaciones pero casi no le echaba ganas pero no se notaba el rendimiento hasta el día de hoy.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>2. Mis logros y retos</h3>
+                <p>Mis logros fueron participar en un deporte a nivel estatal de ajedrez qué gané el 2 lugar, llegar a semifinal en un torneo de fútbol antes de la panadería, y los retos es mejorarme como estudiante y tener un mejor futuro.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>3. Proyectos realizados</h3>
+                <p>En proyectos no sé si tengo uno pero se podría decir que logré cosas que me gustaban. No tengo proyectos pero sí retos o una visión de lo que quiero ser.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>4. Metas y aspiraciones</h3>
+                <p>Siento que he cumplido casi con todo a excepción de tener mejores calificaciones. En este punto no tengo mucho que decir.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>5. Lecciones de vida</h3>
+                <p>Aprendí durante mi vida es que siempre estarán personas a tu lado aún si estás solo, con fe y con determinación se puede lograr cualquier cosa, no importa en donde esté o como se vea, se puede lograr.</p>
+            </div>
+        </section>
+        
+        <!-- Secciones de Leonardo Luna -->
+        <section id="leonardo">
+            <h2>Leonardo Luna</h2>
+            
+            <div class="integrante">
+                <h3>1. Mi historia</h3>
+                <p>Crecí en una familia donde soy el hermano mayor, a mi corta edad demostré gran capacidad para solucionar problemas además de todo mi poder para convencer a las personas con el habla. Lamentablemente tuve que madurar muy rápido por todo lo que vivía, ya después con el tiempo uno se acostumbra a día de hoy aún sigo tratando de mejorar.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>2. Mis logros y retos</h3>
+                <p>Pues en realidad no tengo, los retos son simplemente los impuestos por mi mente.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>3. Proyectos realizados</h3>
+                <p>Los proyectos realizados es lograr adquirir grandes cantidades de dinero con corta edad.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>4. Metas y aspiraciones</h3>
+                <p>Lograr un legado, algo que marque un antes y un después al menos en mi familia.</p>
+            </div>
+            
+            <div class="integrante">
+                <h3>5. Lecciones de vida</h3>
+                <p>Mi lección de vida es que si algo quieres hacer, hazlo en ese momento.</p>
+            </div>
+        </section>
+        
+        <!-- Sección de recursos -->
+        <section id="recursos">
+            <h2>Recursos Compartidos</h2>
+            <p>Aquí encontrarás archivos y recursos que hemos compartido como equipo.</p>
+            
+            <div class="recursos">
+                <div class="recurso">
+                    <h3>Imágenes</h3>
+                    <p>Fotos relacionadas con nuestros proyectos.</p>
+                    <a href="imagenes/">Ver imágenes</a>
+                </div>
+                
+                <div class="recurso">
+                    <h3>Videos</h3>
+                    <p>Material audiovisual de presentaciones.</p>
+                    <a href="videos/">Ver videos</a>
+                </div>
+                
+                <div class="recurso">
+                    <h3>Documentos</h3>
+                    <p>Archivos PDF con información adicional.</p>
+                    <a href="documentos/">Ver documentos</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Nueva sección para subir archivos -->
+        <section id="subir-archivos" class="upload-section">
+            <h2>Subir Archivos</h2>
+            <p>Selecciona y sube imágenes o documentos PDF para compartir con el equipo.</p>
+            
+            <form class="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                <div class="file-type-selector">
+                    <label>
+                        <input type="radio" name="file-type" value="image" checked> Imagen
+                    </label>
+                    <label>
+                        <input type="radio" name="file-type" value="pdf"> PDF
+                    </label>
+                    <label>
+                        <input type="radio" name="file-type" value="other"> Otro archivo
+                    </label>
+                </div>
+                
+                <input type="file" name="archivo" accept="image/*,.pdf" required>
+                
+                <div>
+                    <label for="descripcion">Descripción (opcional):</label>
+                    <textarea id="descripcion" name="descripcion" rows="3" style="width: 100%;"></textarea>
+                </div>
+                
+                <button type="submit">Subir Archivo</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Nuestro Equipo - Ana, Axel y Leonardo</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
